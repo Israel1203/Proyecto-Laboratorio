@@ -1,0 +1,95 @@
+/*Llamar por etiquetas*/
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+header .contenedor{
+    /*Nos Convierte los elementos en cajas flexibles*/
+    display: Flex;
+
+    /*Nos alinea el texto a la izquierda y a la derecha     space-around    center    flex-end    flex-start*/
+    justify-content: space-between;
+}
+
+a{
+    /*Quitar el subrayado, �ste se encuentra sobre la etiqueta "a"*/
+    text-decoration: none;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+    height: 100%
+}
+
+body {
+    height:100vh;/*Es el alto de la ventana*/
+}
+
+/*SECCI�N DE SERVICIOS*/
+.contenedor-servicios{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.servicio{
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    color: #ffffff;
+
+    /*Para las imagenes que esten alinedas*/
+    position: relative;
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin:0;
+}
+
+.servicio p{
+    margin-bottom: 20px;
+}
+
+.contenedor-servicios .violeta{
+    /*aplicamos el linaer-gradient y el 
+    "TO TOP" -> el gradiente se aplica de arriba hacia abajo
+     */
+    background: linear-gradient(to top, #5055df, #6d68f3);
+
+    /*Sombra de la caja
+    El primer valor es la anchura
+    El segundo es la altura
+    El tercero es el radio de la sombra 
+    El cuarto es el Radio de propagaci�n
+    El ultimo es color (rgba)
+    */
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+}
+
+.contenedor-servicios .celeste{
+    background: linear-gradient(to top, #40a8f9, #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+
+.contenedor a{
+    font-size: 14px;
+    background: #ffffff;
+    color: black;
+    padding: 14px 24px;
+    display: inline-block;
+}
+
+.contenedor-servicios {
+    text-align: center;
+}
+.contenedor-entrada{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
